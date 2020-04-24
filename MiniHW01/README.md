@@ -38,9 +38,9 @@ Because all other metrics can be calculated, we ﬁrst introduce confusion matri
 ![cm matrix](wiki/cm.jpg)
 
 Where:
-•	TN = True Negative 
-•	FP = False Positive 
-•	FN = False Negative 
+•	TN = True Negative
+•	FP = False Positive
+•	FN = False Negative
 •	TP = True Positive
 
 Accuracy is how our model can say class 1 is 1 and 0 is 0 regarding all given examples. Give confusion matrix, `Accuracy = (TN+TP) / (TN+FP+FN+TP)` So obviously more is better.
@@ -54,12 +54,12 @@ Precision-Recall curve mostly used for comparing systems at different points.
 
 ![precision recall graph](wiki/pr_curve.png)
 
-Based on this graph, we can say that a model is better if it has higher precision and recall at same point or any other trade off of these parameters. Best model is the one which it’s PR-Curve intends to stick to top-right corner. 
+Based on this graph, we can say that a model is better if it has higher precision and recall at same point or any other trade off of these parameters. Best model is the one which it’s PR-Curve intends to stick to top-right corner.
 
-This graph mostly moves downward from top-left to bottom-right which demonstrates the typical decrease in precision due to achieving higher recall. This tendency depicts that if we enforce model to retrieve more relevant items, the more irrelevant items are also retrieved.  
+This graph mostly moves downward from top-left to bottom-right which demonstrates the typical decrease in precision due to achieving higher recall. This tendency depicts that if we enforce model to retrieve more relevant items, the more irrelevant items are also retrieved.
 
 ### 1.2 F1
-Based on available values F1 can be defined as follows, `F1 = 2*(Recall * Precision) / (Recall + Precision)`. F1 score is weighted average of precision and recall, so it is very useful when the cost of error of classes are different from each other (say disease detection). Here is a graph to alleviate the comprehension of the problem: 
+Based on available values F1 can be defined as follows, `F1 = 2*(Recall * Precision) / (Recall + Precision)`. F1 score is weighted average of precision and recall, so it is very useful when the cost of error of classes are different from each other (say disease detection). Here is a graph to alleviate the comprehension of the problem:
 
 ![f1 by threshold](wiki/f1_by_thres.png)
 
@@ -80,7 +80,7 @@ Simply put, F-measure enable us to give importance to recall or precision based 
 
 Another point that need to be mentioned is that F-measure focuses on positive class which enable us to have a clear understanding of the model’s behavior regarding speciﬁc problem as the numbers are easily interpreted.
 
-The challenge in F-measure is to ﬁnd the best threshold (beta) value to enable approximately best measure over recall and precision. Otherwise the interpretation may be biased toward particular metric. This also is an advantage where we can use it in imbalance datasets to focus on the anomaly (or rare case) rather than averaging over all thresholds which is what ROC does.  
+The challenge in F-measure is to ﬁnd the best threshold (beta) value to enable approximately best measure over recall and precision. Otherwise the interpretation may be biased toward particular metric. This also is an advantage where we can use it in imbalance datasets to focus on the anomaly (or rare case) rather than averaging over all thresholds which is what ROC does.
 
 It is a chart that visualizes the tradeoff between true positive rate (TPR) and false positive rate (FPR). Basically, for every threshold, we calculate TPR and FPR and plot it on one chart. Of course, the higher TPR and the lower FPR is for each threshold the better and so classiﬁers that have curves that are more top-left-side are better. The best ROC is the rectangle which has perfect discrimination power for any possible threshold.
 
@@ -102,7 +102,7 @@ In recommender systems, we only interested in top-K results as almost all result
 
 Precision at K is the proportion of relevant results in the top-K set that has rating (by our recommender) higher than a predefined threshold. Simply put, how many of top-K results are really good!
 
-One of the drawbacks of these metrics is that if the number of relevant results is less than K, then the P@K will be less than 1 even though let’s say all outputs are completely relevant and have ratings higher than the desired threshold. 
+One of the drawbacks of these metrics is that if the number of relevant results is less than K, then the P@K will be less than 1 even though let’s say all outputs are completely relevant and have ratings higher than the desired threshold.
 
 So, in the case of K=1, is the only outcome has higher rating than threshold or not. In case of K=10, how many of outcomes have higher rating than threshold.
 
@@ -124,9 +124,9 @@ As we can see, A is better than C but we cannot have same argument about A and B
 Of the main problems of this approach is that it is averaging over different sublists of lists and also over different query lists. So, noises can dominate and the final result may not be reliable at all. This argument is same we discussed for the advantage of ROC over F1 in imbalanced datasets where F1 averages and obfuscate the imbalance problem! Although this is an advantage than help to discriminate two different model with only a single number!
 
 ### 2.3 MRR
-MRR stands for mean reciprocal rank which is defined for a set of different lists of recommendations. Let’s say Q is a set of multiple lists. Then we sort items by their score descending where `ranki` is the position of the first relevant item in the corresponding list. Averaging over all lists, is the final metric. 
+MRR stands for mean reciprocal rank which is defined for a set of different lists of recommendations. Let’s say Q is a set of multiple lists. Then we sort items by their score descending where `ranki` is the position of the first relevant item in the corresponding list. Averaging over all lists, is the final metric.
 
-![MRR formula](wiki/MRR.jpg)
+![MRR formula](wiki/mrr.jpg)
 
 In simple terms, it looks for the answer to the question “where is the first relevant item?”
 
@@ -153,7 +153,7 @@ The logarithm of the position increases by increasing the index of position so t
 ![DCG formula](wiki/DCG2.jpg)
 
 ### 2.6 NDCG
-The problem with DCG is that the score cannot be used for compare multiple queries. For instance, a query is rare and ambiguous and the another one is not and both have 3 
+The problem with DCG is that the score cannot be used for compare multiple queries. For instance, a query is rare and ambiguous and the another one is not and both have 3
 recommended with highest score, but the scores won’t be same as fined rating are not same. To handle this issue, normalization over all queries is needed. A standard factor would be calculating the ideal DCG which means what would the score of DCG in a particular query be if the positions were sorted based on the ratings. IDCG can be annotated in this way:
 
 ![NDCG formula](wiki/IDCG.jpg)
@@ -166,14 +166,14 @@ In the end by dividing DCG of each query by its IDCG, we get normalized DCG whic
 
 This approach has all benefits of MAP plus it works on fined rating too. Log discounting factor is also very good statistical approach for incorporating positional weighting.
 
-One of the drawbacks is when IDCG=0 which happens when there is no relevant recommendation. Another problem is similar to P@K which in this case, if number of returned recommendations is below p, then the score is not valid and normalized. 
+One of the drawbacks is when IDCG=0 which happens when there is no relevant recommendation. Another problem is similar to P@K which in this case, if number of returned recommendations is below p, then the score is not valid and normalized.
 
 ### 2.7 r-Prec
-r-Prec or R-Precision is another metric for evaluating frequency of relevant items. Its definition is very similar to Precision@K but there is main difference between these two terms. 
+r-Prec or R-Precision is another metric for evaluating frequency of relevant items. Its definition is very similar to Precision@K but there is main difference between these two terms.
 
-Precision at K is the proportion of relevant results in the top-K set is the definition of P@K. Based on, we can define r-Prec in this way: R-precision is the precision at the Rth position in the ranking of results for a query that has R relevant documents. But in R-Precision, R stands for the count of all relevant results in entire result set and we looking for number of relevant items in top-R results. 
+Precision at K is the proportion of relevant results in the top-K set is the definition of P@K. Based on, we can define r-Prec in this way: R-precision is the precision at the Rth position in the ranking of results for a query that has R relevant documents. But in R-Precision, R stands for the count of all relevant results in entire result set and we looking for number of relevant items in top-R results.
 
-The power of r-Prec is that it considers a cutoff point regarding a decision based on entire 
+The power of r-Prec is that it considers a cutoff point regarding a decision based on entire
 result set, but P@K won’t incorporate any result no matter relevant or not below rank K.
 
 As we said before, the drawback of P@K is the score will be lower than 1 or a small value of the number of relevant items are small in top-K even though that might be all possible relevant results. r-Prec will solve this issue for us as it incorporates the number of all relevant results.
@@ -181,7 +181,7 @@ As we said before, the drawback of P@K is the score will be lower than 1 or a sm
 ### 2.8 bPref
 bPref is a special metric used when we have an incomplete judgement about the relevant result. For instance, let’s say we have 10 results regarding a particular query, we know 3 of the are relevant, 5 irrelevant and 2 unknowns. Other metrics cannot handle this kind of problem.
 
-bPref computes a preference relation of whether judged relevant items are retrieved ahead of judged irrelevant items. The bPref measure is defined as: 
+bPref computes a preference relation of whether judged relevant items are retrieved ahead of judged irrelevant items. The bPref measure is defined as:
 
 ![pbref formula](wiki/bpref.jpg)
 
@@ -202,7 +202,7 @@ Here is the simple definition for our new metrics:
 
 Let’s say we know how to calculate precision and recall and f-measure for a binary confusion matrix. These metrics can be easily computed for any number of classes where the only point is that if computing them for class A, anything other than class A must be summed up and considered as class B, yes, converting to binary class situation.
 1.	Macro: In this case, we need to compute precision, recall, then f-measure for every class. Then to get a final f-measure for entire model, we just need to take an arithmetic average over all f-measures for every class. Note that we can incorporate class frequency to have weighted f-macro too.
-2.	Micro: Same as definition, calculating this metric, needs incorporation of all classes to help us calculate precision-micro and recall-micro first.  To calculate precision-micro we need `TP / (TP + FP)` which in this case, TP is all correctly labeled samples over all other misclassified samples. In term of confusion matrix, it is `micro-precision = diag / (sum(cm) - diag)`. Recall-micro can be defined in same way too. So, now we have precision-micro and recall-micro, then computing f-micro is just substituting these values into f-measure formula. 
+2.	Micro: Same as definition, calculating this metric, needs incorporation of all classes to help us calculate precision-micro and recall-micro first.  To calculate precision-micro we need `TP / (TP + FP)` which in this case, TP is all correctly labeled samples over all other misclassified samples. In term of confusion matrix, it is `micro-precision = diag / (sum(cm) - diag)`. Recall-micro can be defined in same way too. So, now we have precision-micro and recall-micro, then computing f-micro is just substituting these values into f-measure formula.
 
 ## 4 The Relation Between Alpha and Beta in F-Measure
 To see that this leads to the β2 formulation we can start with the general formula for the weighted harmonic mean of P and R and calculate their partial derivatives with respect to P and R. The source cited uses E (for "effectiveness measure"), which is just 1−F and the explanation is equivalent whether we consider E or F.
@@ -251,12 +251,12 @@ False Positive rate or `Fall-out = FP / (FP + TN)`. It means we are looking for 
 Furthermore, when we want to decrease FN, we may lead to increase FP as the number of cases increase but cases without that particular attribute are far more populated. Again, in case of COVID19, when we want to reduce the number of failed detections, we have to test more and wider which leads to higher FP.
 
 ## 7 Particular Combination of Specificity, Sensitivity, PPV and NPV in Medical Predictor Assessment
-First of all, let’s define specificity and sensitivity using confusion matrix so, 
+First of all, let’s define specificity and sensitivity using confusion matrix so,
 `specificity = TN / (TN + FP)` | `sensitivity = recall = TP / (TP + FN)`
 
 In case of medical diagnosing, the sensitivity means how many of people have been diagnosed correctly among all people with the disease. For specificity, we can say that number of people who have not been diagnosed positive (negative test) among all people who do not have the disease.
 
-Some points we should consider is that specificity just will tell us that non-existence of something won’t cause a positive flag. 
+Some points we should consider is that specificity just will tell us that non-existence of something won’t cause a positive flag.
 
 PPV or precision will tell us how many of people that our model diagnosed that they have the disease, actually have it (`PPV = TP / (TP + FP)`).
 
