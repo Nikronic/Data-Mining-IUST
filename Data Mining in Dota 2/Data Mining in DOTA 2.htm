@@ -1,0 +1,3154 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="Data%20Mining%20in%20DOTA%202_files/filelist.xml">
+<link rel=Preview href="Data%20Mining%20in%20DOTA%202_files/preview.wmf">
+<link rel=Edit-Time-Data href="Data%20Mining%20in%20DOTA%202_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Data Mining in Dota 2 - Auto generated webpage</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Mohammad Doosti Lakhani</o:Author>
+  <o:Keywords>Dota 2;MMO;Data Mining;matchmaking;clustering;regression;classification</o:Keywords>
+  <o:LastAuthor>Mohammad Doosti Lakhani</o:LastAuthor>
+  <o:Revision>10</o:Revision>
+  <o:TotalTime>892</o:TotalTime>
+  <o:LastPrinted>2020-07-21T22:03:00Z</o:LastPrinted>
+  <o:Created>2020-07-21T22:07:00Z</o:Created>
+  <o:LastSaved>2020-07-21T22:12:00Z</o:LastSaved>
+  <o:Pages>15</o:Pages>
+  <o:Words>3252</o:Words>
+  <o:Characters>18543</o:Characters>
+  <o:Lines>154</o:Lines>
+  <o:Paragraphs>43</o:Paragraphs>
+  <o:CharactersWithSpaces>21752</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="Data%20Mining%20in%20DOTA%202_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Data%20Mining%20in%20DOTA%202_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>AR-SA</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="375">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:normal;}
+h3
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F3763;
+	mso-themecolor:accent1;
+	mso-themeshade:127;
+	font-weight:normal;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-priority:35;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	color:#44546A;
+	mso-themecolor:text2;
+	font-style:italic;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	mso-ansi-font-size:28.0pt;
+	mso-bidi-font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F3763;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-ascii-font-family:"Segoe UI";
+	mso-hansi-font-family:"Segoe UI";
+	mso-bidi-font-family:"Segoe UI";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:233469610;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1177707962 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:957222044;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1194971594 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:1498612084;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-762527996 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1569338245;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1850537776 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:1620836539;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1908371748 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l5
+	{mso-list-id:1771270819;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1954613948 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l5:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l5:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l5:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l5:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l5:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTable15Plain3
+	{mso-style-name:"Plain Table 3";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:43;
+	mso-style-unhide:no;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTable15Plain3FirstRow
+	{mso-style-name:"Plain Table 3";
+	mso-table-condition:first-row;
+	mso-style-priority:43;
+	mso-style-unhide:no;
+	mso-tstyle-border-bottom:.5pt solid #7F7F7F;
+	mso-tstyle-border-bottom-themecolor:text1;
+	mso-tstyle-border-bottom-themetint:128;
+	text-transform:uppercase;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Plain3LastRow
+	{mso-style-name:"Plain Table 3";
+	mso-table-condition:last-row;
+	mso-style-priority:43;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:cell-none;
+	text-transform:uppercase;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Plain3FirstCol
+	{mso-style-name:"Plain Table 3";
+	mso-table-condition:first-column;
+	mso-style-priority:43;
+	mso-style-unhide:no;
+	mso-tstyle-border-right:.5pt solid #7F7F7F;
+	mso-tstyle-border-right-themecolor:text1;
+	mso-tstyle-border-right-themetint:128;
+	text-transform:uppercase;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Plain3LastCol
+	{mso-style-name:"Plain Table 3";
+	mso-table-condition:last-column;
+	mso-style-priority:43;
+	mso-style-unhide:no;
+	mso-tstyle-border-left:cell-none;
+	text-transform:uppercase;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Plain3OddColumn
+	{mso-style-name:"Plain Table 3";
+	mso-table-condition:odd-column;
+	mso-style-priority:43;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#F2F2F2;
+	mso-tstyle-shading-themecolor:background1;
+	mso-tstyle-shading-themeshade:242;}
+table.MsoTable15Plain3OddRow
+	{mso-style-name:"Plain Table 3";
+	mso-table-condition:odd-row;
+	mso-style-priority:43;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#F2F2F2;
+	mso-tstyle-shading-themecolor:background1;
+	mso-tstyle-shading-themeshade:242;}
+table.MsoTable15Plain3NECell
+	{mso-style-name:"Plain Table 3";
+	mso-table-condition:ne-cell;
+	mso-style-priority:43;
+	mso-style-unhide:no;
+	mso-tstyle-border-left:cell-none;}
+table.MsoTable15Plain3NWCell
+	{mso-style-name:"Plain Table 3";
+	mso-table-condition:nw-cell;
+	mso-style-priority:43;
+	mso-style-unhide:no;
+	mso-tstyle-border-right:cell-none;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1031"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72" style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<p class=MsoTitle align=center style='text-align:center'>Data Mining in DOTA 2</p>
+
+<h1>1 Introduction</h1>
+
+<p class=MsoNormal>In this article I am going to explain how data mining and
+its main areas can help us to build much more reliable, enticing and balanced
+games. I am going to cover areas which mainly can be expressed by major areas
+in data mining such as classification, regression, clustering.</p>
+
+<p class=MsoNormal>You might ask does it worth and the answer would be yes for
+sure. The stats in the next section will explain this idea to you why machine
+learning, in this article particularly data mining can save a lot of
+time/money/players for us which directly affects the budget for maintaining
+game and its artifacts.</p>
+
+<p class=MsoNormal>In the next sections first, I will introduce Dota 2 and why
+this game is one of the greatest games ever existed, then we will go through
+its mechanics such as characters and as a follow up, we I will explain the
+matchmaking system (so many permanent bans here!) and finally we will finish
+our interesting thoughts by demonstrating servers.</p>
+
+<h1>2 Dota 2 Is Huge!</h1>
+
+<p class=MsoNormal>Dota is actually a map of the game called Warcraft by
+Blizzard back in 2002 which developed by a group of fans of the game where
+their leader is called <span class=SpellE>IceFrog</span> and still no one knows
+his real identity. Then this map got a lot of attention from users which
+basically, most of the people installed the game for this map. After a huge
+success, Valve, the current owner of Dota 2, acquired that team to create a
+standalone game based on the same mechanics/logics/map of original <span
+class=SpellE>dota</span> map which now it’s been called Dota 2 which has been
+announced in 2013 as a beta release (still in beta!!!). </p>
+
+<p class=MsoNormal>In this section, I will not talk about complexity of the
+game as the reason that this game is big. The reason is money and player pool
+which by following stats you will be shocked. But to put complexity in another
+side, just remember that Dota 2 is the most complex game in the entire Esport
+scene in all genres and you might argue about <span class=SpellE>StartCraft</span>
+II but remember that in Dota 2, %99 of times, you only control one unit while
+in StarCraft II you need to control hundreds of different types in real time.</p>
+
+<h2>2.1 Player Pool</h2>
+
+<p class=MsoNormal>Dota 2 has about 900 thousand players on its peak and at
+least 300 thousand players in the hours with lowest <span class=GramE>traffic<span
+style='color:#2F5496;mso-themecolor:accent1;mso-themeshade:191'>[</span></span><span
+style='color:#2F5496;mso-themecolor:accent1;mso-themeshade:191'>1]</span>. So,
+you cannot find a time in a day and in a month and in a year to see an empty
+player pool. Hence, more players, more data, more confliction, and of course
+what Valve cares most, more MONEY!</p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1043" type="#_x0000_t75"
+ style='width:468pt;height:216.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=289
+src="Data%20Mining%20in%20DOTA%202_files/image002.png" v:shapes="Picture_x0020_1"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>1</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--> Dota 2
+Player pool</p>
+
+<p class=MsoNormal>Every month, on average, about 10 million new players join <span
+class=SpellE>dota</span> since it has been released as it is one of the most
+famous games in the entire Esport community. </p>
+
+<h2>2.2 Complexity</h2>
+
+<p class=MsoNormal>Many new users join but also many of them will leave game
+soon due to super complexity of game which literally they will be dead %90 of
+the time or get reported by other players which leads to account ban or
+restriction. Just I want to point that the main issue is that people do not
+study before doing something, as a programmer, I have seen people use a code
+without reading docs first, so obviously I will report them for toxic behavior!</p>
+
+<p class=MsoNormal>Furthermore, OpenAI, one of the biggest AI research
+facilities in the world has created an AI for StarCraft II and Dota 2 which in
+the latter it is called OpenAI 5 using Deep Reinforcement Learning. <span
+style='color:#2F5496;mso-themecolor:accent1;mso-themeshade:191'>[2]<o:p></o:p></span></p>
+
+<p class=MsoNormal>As a summary for OpenAI timeline, it first created a single
+bot to fight 1v1 against best <span class=SpellE>dota</span> players in the
+world and it literally destroyed <span class=SpellE>Dendi</span> (the <i>face
+of Dota</i>) and other pro players 2-0 (best score). </p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_2"
+ o:spid="_x0000_i1042" type="#_x0000_t75" alt="https://cdn.openai.com/dota-2/images/ti7-panel.jpg"
+ style='width:468pt;height:312pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image039.jpg" o:title="ti7-panel"/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=416
+src="Data%20Mining%20in%20DOTA%202_files/image003.jpg"
+alt="https://cdn.openai.com/dota-2/images/ti7-panel.jpg" v:shapes="Picture_x0020_2"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>2</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--> Dota 2 1v1
+(<span class=SpellE>Dendi</span> vs. OpenAI)</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>At the end of 2019, OpenAI 5 won 2 back to back games
+against <span class=SpellE>OGEsposts</span>, the “The international” winner of
+2018 and 2019. You can watch matches here <span style='color:#2F5496;
+mso-themecolor:accent1;mso-themeshade:191'>[3]</span> and also, here is the
+stat shared by <span class=SpellE>OpenArena</span>, the AI team that is playing
+consistently against humans which demonstrates %<span class=GramE>99.4 win</span>
+rate! <span style='color:#2F5496;mso-themecolor:accent1;mso-themeshade:191'>[4]</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_3"
+ o:spid="_x0000_i1041" type="#_x0000_t75" style='width:468pt;height:75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image041.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=100
+src="Data%20Mining%20in%20DOTA%202_files/image004.png" v:shapes="Picture_x0020_3"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>3</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--> OpenAI Five
+stats in pub games</p>
+
+<p class=MsoNormal>But about power, I will say nothing, this text has been
+directly adopted from OpenAI Five blog:<br>
+“OpenAI Five plays 180 years worth of games against itself every day, learning
+via self-play. It trains using a scaled-up version of&nbsp;<a
+href="https://blog.openai.com/openai-baselines-ppo/" target="_blank"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>Proximal
+Policy Optimization</span></a> running on 256 GPUs and 128,000 CPU cores — a larger-scale
+version of the system we built to play the much-simpler&nbsp;<a
+href="https://blog.openai.com/dota-2/" target="_blank"><span style='color:windowtext;
+text-decoration:none;text-underline:none'>solo variant</span></a>&nbsp;of the
+game last year.” <span style='color:#2F5496;mso-themecolor:accent1;mso-themeshade:
+191'>[5]<o:p></o:p></span></p>
+
+<h2>2. 3 Business</h2>
+
+<p class=MsoNormal>As I previously mentioned, more players more money, but how
+much? </p>
+
+<p class=MsoNormal>Dota 2 has different type of competitive scenes such as amateur,
+professional and major which major games determine the teams who will compete
+in the “The International”, the biggest esport event in entire esport scene
+with millions of dollars prize pool.</p>
+
+<p class=MsoNormal>The prize of TI9 (The International 2019) was $34,330,068 exactly
+but note that the base prize which Value put in was only $1,600,000. Yes, the
+other pool has been developed by players by buying battle pass which is full of
+sound/character/skin/image arts for the game and players by buying them,
+contribute %25 percent of the prize pool which means in less than few months by
+just using arts and business ideas, Valve obtained more than $100,000,000
+money! Here are the stats of Dota 2 circuit tournaments <span style='color:
+#2F5496;mso-themecolor:accent1;mso-themeshade:191'>[6]</span>:</p>
+
+<div align=center>
+
+<table class=MsoTable15Plain3 border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes;mso-yfti-lastfirstrow:yes'>
+  <td width=156 valign=top style='width:116.85pt;border:none;border-bottom:
+  solid #7F7F7F 1.0pt;mso-border-bottom-themecolor:text1;mso-border-bottom-themetint:
+  128;mso-border-bottom-alt:solid #7F7F7F .5pt;mso-border-bottom-themecolor:
+  text1;mso-border-bottom-themetint:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:517'><b><span
+  style='text-transform:uppercase'>Tournament<o:p></o:p></span></b></p>
+  </td>
+  <td width=156 valign=top style='width:116.85pt;border:none;border-bottom:
+  solid #7F7F7F 1.0pt;mso-border-bottom-themecolor:text1;mso-border-bottom-themetint:
+  128;mso-border-bottom-alt:solid #7F7F7F .5pt;mso-border-bottom-themecolor:
+  text1;mso-border-bottom-themetint:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:1'><b><span
+  style='text-transform:uppercase'>Base<o:p></o:p></span></b></p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;border:none;border-bottom:solid #7F7F7F 1.0pt;
+  mso-border-bottom-themecolor:text1;mso-border-bottom-themetint:128;
+  mso-border-bottom-alt:solid #7F7F7F .5pt;mso-border-bottom-themecolor:text1;
+  mso-border-bottom-themetint:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:1'><b><span
+  style='text-transform:uppercase'>Contributed<o:p></o:p></span></b></p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;border:none;border-bottom:solid #7F7F7F 1.0pt;
+  mso-border-bottom-themecolor:text1;mso-border-bottom-themetint:128;
+  mso-border-bottom-alt:solid #7F7F7F .5pt;mso-border-bottom-themecolor:text1;
+  mso-border-bottom-themetint:128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:1'><b><span
+  style='text-transform:uppercase'>Total<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0'>
+  <td width=156 valign=top style='width:116.85pt;border:none;border-right:solid #7F7F7F 1.0pt;
+  mso-border-right-themecolor:text1;mso-border-right-themetint:128;mso-border-right-alt:
+  solid #7F7F7F .5pt;mso-border-right-themecolor:text1;mso-border-right-themetint:
+  128;background:#F2F2F2;mso-background-themecolor:background1;mso-background-themeshade:
+  242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:68'><b><span
+  style='text-transform:uppercase'>TI9<o:p></o:p></span></b></p>
+  </td>
+  <td width=156 valign=top style='width:116.85pt;background:#F2F2F2;mso-background-themecolor:
+  background1;mso-background-themeshade:242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'>$1,600,000</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;background:#F2F2F2;mso-background-themecolor:
+  background1;mso-background-themeshade:242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'>$32,730,068</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;background:#F2F2F2;mso-background-themecolor:
+  background1;mso-background-themeshade:242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'>$34,330,068</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=156 valign=top style='width:116.85pt;border:none;border-right:solid #7F7F7F 1.0pt;
+  mso-border-right-themecolor:text1;mso-border-right-themetint:128;mso-border-right-alt:
+  solid #7F7F7F .5pt;mso-border-right-themecolor:text1;mso-border-right-themetint:
+  128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:4'><b><span
+  style='text-transform:uppercase'>TI8<o:p></o:p></span></b></p>
+  </td>
+  <td width=156 valign=top style='width:116.85pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>$1,600,000</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>$23,932,177</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>$25,532,177</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=156 valign=top style='width:116.85pt;border:none;border-right:solid #7F7F7F 1.0pt;
+  mso-border-right-themecolor:text1;mso-border-right-themetint:128;mso-border-right-alt:
+  solid #7F7F7F .5pt;mso-border-right-themecolor:text1;mso-border-right-themetint:
+  128;background:#F2F2F2;mso-background-themecolor:background1;mso-background-themeshade:
+  242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:68'><b><span
+  style='text-transform:uppercase'>TI7<o:p></o:p></span></b></p>
+  </td>
+  <td width=156 valign=top style='width:116.85pt;background:#F2F2F2;mso-background-themecolor:
+  background1;mso-background-themeshade:242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'>$1,600,000</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;background:#F2F2F2;mso-background-themecolor:
+  background1;mso-background-themeshade:242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'>$23,187,916</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;background:#F2F2F2;mso-background-themecolor:
+  background1;mso-background-themeshade:242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'>$24,787,916</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=156 valign=top style='width:116.85pt;border:none;border-right:solid #7F7F7F 1.0pt;
+  mso-border-right-themecolor:text1;mso-border-right-themetint:128;mso-border-right-alt:
+  solid #7F7F7F .5pt;mso-border-right-themecolor:text1;mso-border-right-themetint:
+  128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:4'><b><span
+  style='text-transform:uppercase'>TI6<o:p></o:p></span></b></p>
+  </td>
+  <td width=156 valign=top style='width:116.85pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>$1,600,000</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>$19,170,460</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>$20,770,460</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=156 valign=top style='width:116.85pt;border:none;border-right:solid #7F7F7F 1.0pt;
+  mso-border-right-themecolor:text1;mso-border-right-themetint:128;mso-border-right-alt:
+  solid #7F7F7F .5pt;mso-border-right-themecolor:text1;mso-border-right-themetint:
+  128;background:#F2F2F2;mso-background-themecolor:background1;mso-background-themeshade:
+  242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:68'><b><span
+  style='text-transform:uppercase'>TI5<o:p></o:p></span></b></p>
+  </td>
+  <td width=156 valign=top style='width:116.85pt;background:#F2F2F2;mso-background-themecolor:
+  background1;mso-background-themeshade:242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'>$1,600,000</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;background:#F2F2F2;mso-background-themecolor:
+  background1;mso-background-themeshade:242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'>$16,829,613</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;background:#F2F2F2;mso-background-themecolor:
+  background1;mso-background-themeshade:242;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:64'>$18,429,613</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+  <td width=156 valign=top style='width:116.85pt;border:none;border-right:solid #7F7F7F 1.0pt;
+  mso-border-right-themecolor:text1;mso-border-right-themetint:128;mso-border-right-alt:
+  solid #7F7F7F .5pt;mso-border-right-themecolor:text1;mso-border-right-themetint:
+  128;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;mso-yfti-cnfc:4'><b><span
+  style='text-transform:uppercase'>TI4<o:p></o:p></span></b></p>
+  </td>
+  <td width=156 valign=top style='width:116.85pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>$1,600,000</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>$9,331,105</p>
+  </td>
+  <td width=156 valign=top style='width:116.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;page-break-after:avoid'>$10,931,105</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>4</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--> Dota 2 Pro
+TI Prize Pool</p>
+
+<p class=MsoNormal>Just note that all other major tournaments have been omitted
+which contribute at least $5,000,000 each year.</p>
+
+<h1>3 Dota 2 Mechanics</h1>
+
+<p class=MsoNormal>But let’s talk about science and how the game really works.
+I will first define the core mechanic of game and its basic definitions then I
+will go through other components of game such as heroes and their respective
+variants.</p>
+
+<h2>3.1 Definitions</h2>
+
+<p class=MsoNormal>Dota 2 is an MMO game with top-down view which takes place
+against 2 team of 5 players which each one chooses a hero and only can control
+that hero and its summoned units. The map of the game is always same but
+opponent can choose Radiant (left corner) or Dire (right corner) which has
+their own benefits such as better control over particular towers or better
+vision near Roshan (an AI that holds precious items but really hard to kill)</p>
+
+<p class=MsoNormal>In each lane, there are towers to give vision and defend you
+and the goal is to destroy ancient which is the primary building at the hear of
+the base of opponent.</p>
+
+<p class=MsoNormal>In each lane, creeps (weak AI creatures) will be respawned
+which can be killed by heroes to get gold and experience to level up their
+abilities or buying items. So, more gold/XP leads to stronger hero which MAY
+lead to winning the game.</p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4"
+ o:spid="_x0000_i1040" type="#_x0000_t75" alt="r/DotA2 - 7.24 Ward Map Infographic (UPDATED) - Common Warding Locations! Feedback wanted and encouraged!"
+ style='width:468pt;height:366pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image043.png" o:title="DotA2 - 7"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=488
+src="Data%20Mining%20in%20DOTA%202_files/image005.png"
+alt="r/DotA2 - 7.24 Ward Map Infographic (UPDATED) - Common Warding Locations! Feedback wanted and encouraged!"
+v:shapes="Picture_x0020_4"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>5</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--> Dota 2 Map <span
+style='color:#2F5496;mso-themecolor:accent1;mso-themeshade:191'>[7]</span></p>
+
+<h3>3.1.1 Concepts</h3>
+
+<p class=MsoNormal>As this game is super complex, I just mention few of primary
+stuff that we can propose some solutions of insights within this article.</p>
+
+<p class=MsoNormal>First thing we need to know is that there are 3 type of
+damages, physical, magical and pure which can be absorbed by armor, magic
+resistance and nothing (pure pierces through everything) respectively which can
+be gained by leveling up abilities or buying items to counter. This is
+literally the whole idea of game, heroes have different type of powers and
+different type of defensive skills where you can gain from buying items or
+leveling up your character which can be combined to dodge enemy attacks and
+kill them.</p>
+
+<h3>3.1.2 Heroes</h3>
+
+<p class=MsoNormal>In this game exists about 100+ heroes which can be
+categorized based on 3 main attributes of each hero, agility (carry),
+intelligence (carry/supp) and strength (tank/supp) where they do high physical
+damage, magical damage or utility buffs/debuffs and defensive abilities or
+utility buffs/debuffs.</p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5"
+ o:spid="_x0000_i1039" type="#_x0000_t75" style='width:468pt;height:283.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image045.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=378
+src="Data%20Mining%20in%20DOTA%202_files/image006.png" v:shapes="Picture_x0020_5"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>6</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--> Dota 2
+heroes <span style='color:#2F5496;mso-themecolor:accent1;mso-themeshade:191'>[8]<o:p></o:p></span></p>
+
+<p class=MsoNormal>Each hero has its own unique abilities (at least 4) which
+one of them is ultimate which has high cooldown/mana cost but high utility or
+damage output (usually).</p>
+
+<h3>3.1.3 Abilities</h3>
+
+<p class=MsoNormal>Each hero has its own abilities which correspond to the type
+of hero, for instance, agility heroes have some kind of abilities to do more
+physical damage or disable target or intelligence heroes can heal or disable
+target with low cooldown and high burst of magical damage.</p>
+
+<p class=MsoNormal>Different abilities can help each other to make the effect
+stronger, increase the duration or vice versa against opponents. So, here is
+another challenge that what combination can be constructed without making
+unstoppable or weak structure.</p>
+
+<p class=MsoNormal>To demonstrate how critical it is, in the last patch, many
+of abilities had changes about 0.02. This small amount in the many different
+stances depicts that drift concept can occur which means an error (we can
+assume that if we mistakenly update something bigger/smaller than what it
+should be) can accumulate through all abilities/items and make the game
+unstable and unbalanced. For instance, let’s say we used below ability (which
+one the simplest abilities in the game due to very simple effects) and also
+combined with other abilities to increase buff duration and decrease cooldown
+in the way minimize the distance between these two timers, then isn’t is
+nonsense to have cooldown lower than duration for such a key ability? The
+answer is yes and, in the game, there is at least 10 abilities/items that can affect
+it. Now assume complex abilities that almost entire hero/item pool can be
+effective.</p>
+
+<p class=MsoNormal>Note that effects can be both additive or increase by
+multiplication.</p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_6"
+ o:spid="_x0000_i1038" type="#_x0000_t75" style='width:468pt;height:241.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image047.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=322
+src="Data%20Mining%20in%20DOTA%202_files/image007.png" v:shapes="Picture_x0020_6"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>7</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--> <span
+class=SpellE>Terrorblade</span> abilities <span style='color:#2F5496;
+mso-themecolor:accent1;mso-themeshade:191'>[9]<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="Text_x0020_Box_x0020_2" o:spid="_x0000_s1030"
+ type="#_x0000_t202" style='position:absolute;left:0;text-align:left;
+ margin-left:211.65pt;margin-top:1pt;width:262.85pt;height:282.65pt;z-index:251659264;
+ visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:3.6pt;
+ mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:3.6pt;
+ mso-position-horizontal:right;mso-position-horizontal-relative:margin;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:margin;
+ mso-height-relative:margin;v-text-anchor:top' o:gfxdata="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
+">
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal align=center style='text-align:center'>As we can see,
+    many factors affect the character, their teammates, their damages, attack
+    speed, etc.</p>
+    <p class=MsoNormal align=center style='text-align:center'>Now here comes
+    the challenge. How can we determine these values for this hero so its
+    combination with some particular heroes do not turn into unkillable set or
+    even so weak that no one picks them?</p>
+    <p class=MsoNormal align=center style='text-align:center'>Till today, this
+    issue has been solved yet as we call nerf/buff in every patch because every
+    time a group of heroes become stronger as previously, they were weak or
+    vice versa.</p>
+    <p class=MsoNormal align=center style='text-align:center'>Note that in some
+    patches, the cooldown/animation delay has been changed in term of
+    milliseconds. So, timing matters so much and makes million-dollar
+    differences there!</p>
+    <p class=MsoNormal align=center style='text-align:center'>There is saying:
+    “6 Million dollar Echo slam” which changed the final match in less than 0.5
+    second.</p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square" anchorx="margin"/>
+</v:shape><![endif]--><![if !vml]><img width=356 height=383
+src="Data%20Mining%20in%20DOTA%202_files/image008.png" align=right hspace=12
+vspace=5
+alt="Text Box: As we can see, many factors affect the character, their teammates, their damages, attack speed, etc.&#13;&#10;Now here comes the challenge. How can we determine these values for this hero so its combination with some particular heroes do not turn into unkillable set or even so weak that no one picks them?&#13;&#10;Till today, this issue has been solved yet as we call nerf/buff in every patch because every time a group of heroes become stronger as previously, they were weak or vice versa.&#13;&#10;Note that in some patches, the cooldown/animation delay has been changed in term of milliseconds. So, timing matters so much and makes million-dollar differences there!&#13;&#10;There is saying: “6 Million dollar Echo slam” which changed the final match in less than 0.5 second.&#13;&#10;"
+v:shapes="Text_x0020_Box_x0020_2"><![endif]><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_7" o:spid="_x0000_i1037" type="#_x0000_t75" style='width:190.5pt;
+ height:283.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image050.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=254 height=378
+src="Data%20Mining%20in%20DOTA%202_files/image050.png" v:shapes="Picture_x0020_7"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>8</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--> <span
+class=SpellE>Terrorblade's</span> Metamorphosis</p>
+
+<h3>3.1.4 Items</h3>
+
+<p class=MsoNormal>The logic is almost same as abilities but main difference is
+that items are common between all heroes in the game and anyone with enough
+amount of gold can afford and use it. And again, items can be used to buff
+other abilities/items or nerf them. </p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_8"
+ o:spid="_x0000_i1036" type="#_x0000_t75" style='width:441pt;height:492.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image051.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=588 height=657
+src="Data%20Mining%20in%20DOTA%202_files/image051.png" v:shapes="Picture_x0020_8"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>9</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--> Dota 2
+items <span style='color:#4472C4;mso-themecolor:accent1'>[10]</span></p>
+
+<p class=MsoNormal>I will demonstrate the effect of items again by using two
+simple items that can be combined to buff the used ability in the previous
+section.</p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1029" type="#_x0000_t202" style='position:absolute;left:0;
+ text-align:left;margin-left:212.05pt;margin-top:.75pt;width:263.25pt;height:180.75pt;
+ z-index:251661312;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin;v-text-anchor:top'
+ o:gfxdata="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
+ZXYueG1sUEsFBgAAAAAEAAQA8wAAAIgFAAAAAA==
+">
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal align=center style='text-align:center'>Our hero does not
+    have lifesteal (a percentage of damage as hit point/health) so to get
+    sustainability, we buy a cheap item which gives %15 lifesteal and %18
+    damage as additive buff. It also has 1200 radius effect, you will now about
+    its usage in next section.</p>
+    <p class=MsoNormal align=center style='text-align:center'>Ok, now we have
+    something on top of all our abilities.</p>
+    <p class=MsoNormal align=center style='text-align:center'>Here is the
+    question: We used an item to buff our hero. Can we use another item on top
+    of this to buff this item too?</p>
+    <p class=MsoNormal align=center style='text-align:center'>YES!</p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square" anchorx="margin"/>
+</v:shape><![endif]--><![if !vml]><img width=357 height=247
+src="Data%20Mining%20in%20DOTA%202_files/image009.png" align=right hspace=12
+vspace=5
+alt="Text Box: Our hero does not have lifesteal (a percentage of damage as hit point/health) so to get sustainability, we buy a cheap item which gives %15 lifesteal and %18 damage as additive buff. It also has 1200 radius effect, you will now about its usage in next section.&#13;&#10;Ok, now we have something on top of all our abilities.&#13;&#10;Here is the question: We used an item to buff our hero. Can we use another item on top of this to buff this item too?&#13;&#10;YES!&#13;&#10;"
+v:shapes="_x0000_s1029"><![endif]><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_10" o:spid="_x0000_i1035" type="#_x0000_t75" style='width:185.25pt;
+ height:183.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image053.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=247 height=245
+src="Data%20Mining%20in%20DOTA%202_files/image053.png" v:shapes="Picture_x0020_10"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>10</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]--> <span class=SpellE>Vladmir's</span>
+Offering</p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1028" type="#_x0000_t202" style='position:absolute;left:0;
+ text-align:left;margin-left:212.05pt;margin-top:.6pt;width:263.25pt;height:139.5pt;
+ z-index:251663360;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin;v-text-anchor:top'
+ o:gfxdata="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
+">
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal align=center style='text-align:center'>This item gives
+    us %24 lifesteal amplification which means our previous item which gave us
+    %15 lifesteal now has much more effect but this effect is multiplied (not
+    additive). Also, it has %16 status resistance which gives more duration to
+    Metamorphosis.</p>
+    <p class=MsoNormal align=center style='text-align:center'>Now I want to
+    buff this item too! But I do not want to use another slot (I have only 6
+    free in total) so I upgrade this to get more buffs.</p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square" anchorx="margin"/>
+</v:shape><![endif]--><![if !vml]><img width=357 height=192
+src="Data%20Mining%20in%20DOTA%202_files/image010.png" align=right hspace=12
+vspace=5
+alt="Text Box: This item gives us %24 lifesteal amplification which means our previous item which gave us %15 lifesteal now has much more effect but this effect is multiplied (not additive). Also, it has %16 status resistance which gives more duration to Metamorphosis.&#13;&#10;Now I want to buff this item too! But I do not want to use another slot (I have only 6 free in total) so I upgrade this to get more buffs.&#13;&#10;"
+v:shapes="_x0000_s1028"><![endif]><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_12" o:spid="_x0000_i1034" type="#_x0000_t75" style='width:186.75pt;
+ height:141pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image055.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=249 height=188
+src="Data%20Mining%20in%20DOTA%202_files/image055.png" v:shapes="Picture_x0020_12"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>11</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]--> <span class=SpellE>Sange</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1027" type="#_x0000_t202" style='position:absolute;left:0;
+ text-align:left;margin-left:212.05pt;margin-top:.35pt;width:263.25pt;height:200.25pt;
+ z-index:251665408;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin;v-text-anchor:top'
+ o:gfxdata="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
+">
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal align=center style='text-align:center'>If we get <span
+    class=SpellE>Yasha</span> and combine with <span class=SpellE>Sange</span>,
+    we amplify everything in both items.</p>
+    <p class=MsoNormal align=center style='text-align:center'>And of course,
+    there are many items to counter this situation but due to super complexity,
+    we will not go through this.</p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square" anchorx="margin"/>
+</v:shape><![endif]--><![if !vml]><img width=357 height=273
+src="Data%20Mining%20in%20DOTA%202_files/image011.png" align=right hspace=12
+vspace=5
+alt="Text Box: If we get Yasha and combine with Sange, we amplify everything in both items.&#13;&#10;And of course, there are many items to counter this situation but due to super complexity, we will not go through this.&#13;&#10;"
+v:shapes="_x0000_s1027"><![endif]><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_14" o:spid="_x0000_i1033" type="#_x0000_t75" style='width:185.25pt;
+ height:204.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image057.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=247 height=273
+src="Data%20Mining%20in%20DOTA%202_files/image057.png" v:shapes="Picture_x0020_14"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>12</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]--> <span class=SpellE>Sange</span>
+and <span class=SpellE>Yasha</span></p>
+
+<h3>3.1.5 Teamwork</h3>
+
+<p class=MsoNormal>Here is the idea, the only thing we talked in every section
+was that we can combine everything. So, do we have to do it all on our own? No,
+our teammates can come to help and here is the game gets super complex! Timing
+of items/abilities can disable your own teammate or buff so much that a carry
+solely handles the entire enemy team and many million dollars just went from
+one team to another only because of the correct timing and correct choice of
+items/abilities.</p>
+
+<p class=MsoNormal>We all know the logic here, so, let’s assume we are <span
+class=SpellE>Terrorblade</span> and playing carry, then let’s our support/tank
+by a cheap item such as Vladimir’s offering to give everyone lifesteal and we
+only pay for <span class=SpellE>Sange</span> and <span class=SpellE>Yasha</span>.</p>
+
+<p class=MsoNormal>Why would be stop there? Let’s get more buffs from our
+teammates.</p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1026" type="#_x0000_t202" style='position:absolute;left:0;
+ text-align:left;margin-left:215.8pt;margin-top:1.05pt;width:267pt;height:254.25pt;
+ z-index:251667456;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:3.6pt;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:3.6pt;mso-position-horizontal:right;
+ mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin;v-text-anchor:top'
+ o:gfxdata="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
+">
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal align=center style='text-align:center'><span
+    class=GramE>Again</span> this item is cheap to but offers very good stats
+    to our teammates which buying them on our own for every character costs
+    more than 10000 golds.</p>
+    <p class=MsoNormal align=center style='text-align:center'>That is the idea,
+    support items can be shared by all heroes and this way each hero can focus
+    on their roles.</p>
+    <p class=MsoNormal align=center style='text-align:center'>Our <span
+    class=SpellE>Terrorblade</span> has a lot of damage, has lifesteal, has
+    sustain, has status resistance, but wouldn’t it be great to give movement
+    speed to a high damage carry which is also ranged? Yes, sure. So, here
+    comes another combination that can affect entire game.</p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square" anchorx="margin"/>
+</v:shape><![endif]--><![if !vml]><img width=362 height=345
+src="Data%20Mining%20in%20DOTA%202_files/image012.png" align=right hspace=12
+vspace=5
+alt="Text Box: Again this item is cheap to but offers very good stats to our teammates which buying them on our own for every character costs more than 10000 golds.&#13;&#10;That is the idea, support items can be shared by all heroes and this way each hero can focus on their roles.&#13;&#10;Our Terrorblade has a lot of damage, has lifesteal, has sustain, has status resistance, but wouldn’t it be great to give movement speed to a high damage carry which is also ranged? Yes, sure. So, here comes another combination that can affect entire game.&#13;&#10;"
+v:shapes="_x0000_s1026"><![endif]><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_16" o:spid="_x0000_i1032" type="#_x0000_t75" style='width:183.75pt;
+ height:258pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image059.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=245 height=344
+src="Data%20Mining%20in%20DOTA%202_files/image059.png" v:shapes="Picture_x0020_16"><![endif]></span></p>
+
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
+<span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>13</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]--> Drum of Endurance</p>
+
+<p class=MsoNormal>Now we now enough about challenges, let’s provide some ideas
+that might improve game experience.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>3.2 Balancing</h2>
+
+<p class=MsoNormal>The main challenge in this type of games are the balancing
+between characters, abilities and items and as you have seen, a small percentage
+of buff/nerf can make a hero everyone’s favorite or a dead hero!</p>
+
+<p class=MsoNormal>We try to use some of our knowledge in data mining to
+provide at least another helpful hand in determining these values.</p>
+
+<h3>3.2.1 Heroes</h3>
+
+<p class=MsoNormal>Here are some ideas we can use:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l4 level1 lfo1'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>Let’s create characters by
+our sense, then roll out the patch and analysis the post-game stats. We can
+determine that pro players are spamming particular build of items and
+combination of heroes and by calculating the corresponding distribution, we can
+understand that we need buff/nerf or not.<br>
+To determine hero spamming, we can use association rules to rank most common used
+patterns as spamming act and provide buff/nerf for highest/lowest ranks. In
+this task features such as win rate, KDA, and net worth all can be used.<br>
+Above aforementioned features can be used for a clustering algorithm to put
+spammed heroes in different clusters and we rank them and same updating idea
+can be used.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l4 level1 lfo1'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>For changing values of attributes,
+we can incorporate an embedding for all possible values, then compute distances
+between all heroes and try to reduce/increase the distance based on post-match
+stats.</p>
+
+<h3>3.2.2 Abilities</h3>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt;mso-list:l5 level1 lfo2'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>Same ideas from heroes can
+be applied here.</p>
+
+<h3>3.2.3 Items</h3>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l5 level1 lfo2'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>Items is easier to handle
+as it is common between two sides.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l5 level1 lfo2'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>Association rules can be
+used here to find frequent item sets on top of clustered heroes. This enable us
+to understand spamming with respect to hero spamming which cannot be neglected
+as the main part of decision making in item builds.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l5 level1 lfo2'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>Same vector embedding idea
+can be used here to work with attributes of items.</p>
+
+<h3>3.2.4 Teamwork</h3>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l0 level1 lfo3'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>This might be interesting
+idea to treat the team work as intra-cluster distances of embedding vectors. If
+a cluster corresponds to a spamming hero/item pool, then closer the distances,
+the more tight and stronger the combination, so we can increase the intra-cluster
+distances to nerf the items/abilities or buff them.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l0 level1 lfo3'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>Also, inter-cluster
+distances can be used to optimize counter-picks as this mainly contributes to
+hero choice which leads to introducing new item builds.</p>
+
+<p class=MsoNormal>To just clarify things, I think we can incorporate every effect
+using a vector of features like this:</p>
+
+<div align=center>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=125 valign=top style='width:93.5pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Attribute</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Movement speed</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Agility</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Life steal</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>…</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=125 valign=top style='width:93.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Normalized value</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>0.1</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>0.7</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>0.05</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>…</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1>4 Dota 2 Ranking</h1>
+
+<p class=MsoNormal>In every game, the main challenge is matchmaking which
+corresponds to matching players with similar amount of skill together. This is one
+of the most important features in a every game to preserve player pool. </p>
+
+<h2>4.1 Definitions</h2>
+
+<p class=MsoNormal>Here I list some of the contributing features to this
+challenge.</p>
+
+<h3>4.1.1 Medals</h3>
+
+<p class=MsoNormal>In this game, there are different type of medals which each
+has 5 stars to be completed. This medals mostly is based on experience rather than
+skill, but the exact formula has not been revealed but we have seen that
+players with low skill for sure will not have good medals but the inverse mode
+is not correct due to many factors such as getting carried by high skill party.
+This is some kind of outlier that need be dealt with but I will omit it as
+there are more important type of outliers in this game. Below, you can see
+Herald, Guardian, Crusader, Archon, Legend, Ancient and divine medals. <span
+style='color:#4472C4;mso-themecolor:accent1'>[11]</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_9"
+ o:spid="_x0000_i1031" type="#_x0000_t75" alt="SeasonalRank1-1.png" style='width:60.75pt;
+ height:60.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image060.png" o:title="SeasonalRank1-1"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=81 height=81
+src="Data%20Mining%20in%20DOTA%202_files/image013.png" alt=SeasonalRank1-1.png
+v:shapes="Picture_x0020_9"><![endif]><!--[if gte vml 1]><v:shape id="Picture_x0020_18"
+ o:spid="_x0000_i1030" type="#_x0000_t75" alt="SeasonalRank2-1.png" style='width:63pt;
+ height:63pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image062.png" o:title="SeasonalRank2-1"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=84 height=84
+src="Data%20Mining%20in%20DOTA%202_files/image014.png" alt=SeasonalRank2-1.png
+v:shapes="Picture_x0020_18"><![endif]><!--[if gte vml 1]><v:shape id="Picture_x0020_19"
+ o:spid="_x0000_i1029" type="#_x0000_t75" alt="SeasonalRank3-1.png" style='width:63.75pt;
+ height:63.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image064.png" o:title="SeasonalRank3-1"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=85 height=85
+src="Data%20Mining%20in%20DOTA%202_files/image015.png" alt=SeasonalRank3-1.png
+v:shapes="Picture_x0020_19"><![endif]><!--[if gte vml 1]><v:shape id="Picture_x0020_20"
+ o:spid="_x0000_i1028" type="#_x0000_t75" alt="SeasonalRank4-1.png" style='width:64.5pt;
+ height:64.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image066.png" o:title="SeasonalRank4-1"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=86 height=86
+src="Data%20Mining%20in%20DOTA%202_files/image016.png" alt=SeasonalRank4-1.png
+v:shapes="Picture_x0020_20"><![endif]><!--[if gte vml 1]><v:shape id="Picture_x0020_21"
+ o:spid="_x0000_i1027" type="#_x0000_t75" alt="SeasonalRank5-1.png" style='width:65.25pt;
+ height:65.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image068.png" o:title="SeasonalRank5-1"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=87 height=87
+src="Data%20Mining%20in%20DOTA%202_files/image017.png" alt=SeasonalRank5-1.png
+v:shapes="Picture_x0020_21"><![endif]><!--[if gte vml 1]><v:shape id="Picture_x0020_23"
+ o:spid="_x0000_i1026" type="#_x0000_t75" alt="SeasonalRank6-1.png" style='width:67.5pt;
+ height:67.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image070.png" o:title="SeasonalRank6-1"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=90 height=90
+src="Data%20Mining%20in%20DOTA%202_files/image018.png" alt=SeasonalRank6-1.png
+v:shapes="Picture_x0020_23"><![endif]><!--[if gte vml 1]><v:shape id="Picture_x0020_24"
+ o:spid="_x0000_i1025" type="#_x0000_t75" alt="SeasonalRank7-1.png" style='width:66.75pt;
+ height:66.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Data%20Mining%20in%20DOTA%202_files/image072.png" o:title="SeasonalRank7-1"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=89 height=89
+src="Data%20Mining%20in%20DOTA%202_files/image019.png" alt=SeasonalRank7-1.png
+v:shapes="Picture_x0020_24"><![endif]></span></p>
+
+<p class=MsoNormal>Note that many people think that medals are directly defined
+by MMR which will be explained later but by MY EXPERIMENT, I have shown that
+one can have MMR of 500 but medal of 5 stars Crusader. </p>
+
+<p class=MsoNormal>PS. I omitted Immortal medal as this only belongs to top few
+thousand players of each region (mostly pro players/streamers)<span
+style='mso-bidi-language:FA'><o:p></o:p></span></p>
+
+<h3>4.1.2 MMR</h3>
+
+<p class=MsoNormal>This is the secret of Dota 2. Value did not provide any
+information about it and the only thing we know is that by winning you get +25
+MMR and by losing you get -25 MMR. And players with same MMRs tend to play in
+games.</p>
+
+<p class=MsoNormal>No one has valid information about factors on MMR, but based
+on players’ experience, it seems, number of matches, win rate, gold difference,
+and many others can affect the matchmaking and shows that MMR is not the only
+factor <span style='color:#4472C4;mso-themecolor:accent1'>[12]</span>. </p>
+
+<p class=MsoNormal>But how to deal with account buyers or experienced users
+with new account? Here balancing MMR changes and can have huge jumps. In this
+situation players go into “uncertainty” state which increases the standard deviation
+of MMR for games. Due to this, they may match against players far from their
+skill so the MMR will expose high jumps. This type of players can be considered
+as an anomaly or outlier and need to be dealt very well.</p>
+
+<h3>4.1.3 Smurfs</h3>
+
+<p class=MsoNormal>Smurfs are the anomaly of system, experiences users who
+create new account to get easy matches or even having fun by humiliating new
+users! Yes, Dota 2 has the most toxic community in the entire esport scene in
+my opinion. </p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'> </span></p>
+
+<h3>4.1.4 Reports</h3>
+
+<p class=MsoNormal>I really do not believe in this system, because it does not
+work at all. Literally, you find account buyer in your team almost with probability
+of %75 and max out your report counts and also you get reported for pinging
+that why Oracle (a healer/intelligence/support) has MKB (an item with high
+output damage only for carries) as the first item! </p>
+
+<p class=MsoNormal>So, I am not going to talk about it as I did not find any
+useful benefit of using this system. BUT, in the last few patches, Dota 2 decided
+to be a little pay2win game, if you pay for battle pass, you can “avoid” players
+for next matches in the entire Dota 2. <span style='mso-spacerun:yes'> </span>Free
+users may play with same toxic players over and over again.</p>
+
+<h2>4.2 Balancing</h2>
+
+<h3>4.2.1 Medals</h3>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>As we saw in definition section,
+we have different medals, each has different starts which demonstrates skill/experience
+level. This is literally a hierarchical clustering algorithm which we can use to
+put users with similar medals into similar clusters. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>But the player pool is so
+big and the difference in inter-cluster level might not be close enough to put
+players in same match because they only have same medals. On top of that, we can
+add MMR adopted from next section to improve intra-cluster differences. </p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>After 10 matches, we can
+calibrate the stats of a player by computing its difference from the users of
+the cluster we put it in. If stats match other players, then we use small
+changes if not, we use jump or put user in the “uncertainty” state to accept higher
+standard deviation of player pool MMR/XP/Medal.</p>
+
+<h3>4.2.2 MMR</h3>
+
+<p class=MsoNormal>MMR can be estimated using regression to estimate players
+progress during different matches <span class=SpellE>w.r.t.</span> different
+factors such as hero/item build spam as this help us to detect that user is trying
+to push some idea of winning or not.</p>
+
+<p class=MsoNormal>Here are the ideas:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l3 level1 lfo6'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>We can consider the pro
+players as the benchmark for different roles and for different hero selection
+or item builds. Simply by implementing this approach, we can discard a huge
+pool of toxic players and decrease their MMR to almost base for Herald. This can
+be calculated using distance-based classification to see the act if valid or
+not. For instance, Phoenix first item Radiance needs permanent ban because
+there is no way you see this item build in ancient above skill level.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l3 level1 lfo6'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>We can calculate pro matches’
+stats as the benchmark such as distribution of item build or hero pick. Then we
+can train a model to estimate the distance between distribution of each tier
+which can be considered the medals, with pro matches and introduce a “cut”
+factor. If the distance of particular player in their role is much below the
+given threshold of their specific tier, then MMR need to be decreased even
+though if they won the match and vice versa.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l3 level1 lfo6'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>My idea is that players’
+MMR need to be decided out of the context of win/loose state. You may mention
+that when someone wins, it has better stat, and the answer would be yes, but
+note that we are using top players’ stats as the benchmark and true label, so
+even pro player in a bad match will have very bad stats and that is almost true
+always.</p>
+
+<p class=MsoNormal>Simply, many of probabilistic models that model the case by fitting
+a gaussian distribution over probability of embedding vector of item build/hero
+choice/post-match stats can obtain a lot of information.</p>
+
+<h3>4.2.3 Smurfs</h3>
+
+<p class=MsoNormal>I think this is one of the easiest challenges here due to
+anomaly build of items or even anomaly post-match stats.</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l2 level1 lfo4'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>Smurfs are easy to detect,
+they have extraordinary stats in games, for instance, in a normal average pub
+game, it takes about 18 minutes to build Battle Fury on Juggernaut, but in a
+game with smurf in it, it takes much less like 12 minutes which if we try to
+plot the gaussian distribution for the timing of this item build, we can find
+that this smurf is out of %97 of the area of gaussian distribution.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l2 level1 lfo4'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>Another approach is post-match
+stats such as KDA, Gold, or many other stats that are available in the game. </p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l2 level1 lfo4'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span>Another approach is real
+time analysis. Last hit/deny is a tricky business for new users, but
+experiences players know how to trick their opponents by using Stop key and
+this is an advanced approach, simply by using a window of mouse actions and
+matching a template of a decision tree that has been trained on a window containing
+this trick, can detect this behavior and flag user as smurf.</p>
+
+<h3>4.2.4 Reports</h3>
+
+<p class=MsoNormal>Solution is simple, delete this system, it does not work! My
+solution using data mining is to delete it!</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1>References</h1>
+
+<p class=MsoNormal>[1] <a href="https://steamcharts.com/app/570">https://steamcharts.com/app/570</a></p>
+
+<p class=MsoNormal>[2] <a href="https://openai.com/projects/five/">https://openai.com/projects/five/</a></p>
+
+<p class=MsoNormal>[3] <a href="https://www.twitch.tv/videos/410533063?t=44m53s">https://www.twitch.tv/videos/410533063?t=44m53s</a></p>
+
+<p class=MsoNormal>[4] <a href="https://arena.openai.com/#/results">https://arena.openai.com/#/results</a></p>
+
+<p class=MsoNormal>[5] <a href="https://openai.com/blog/openai-five/">https://openai.com/blog/openai-five/</a></p>
+
+<p class=MsoNormal>[6] <a href="https://dota2.prizetrac.kr/">https://dota2.prizetrac.kr/</a></p>
+
+<p class=MsoNormal>[7] <a
+href="https://www.reddit.com/r/DotA2/comments/f44mx8/724_ward_map_infographic_updated_common_warding">https://www.reddit.com/r/DotA2/comments/f44mx8/724_ward_map_infographic_updated_common_warding</a></p>
+
+<p class=MsoNormal>[8] <a href="http://www.dota2.com/heroes/">http://www.dota2.com/heroes/</a></p>
+
+<p class=MsoNormal>[9] <a href="http://www.dota2.com/hero/terrorblade/">http://www.dota2.com/hero/terrorblade/</a><span
+class=MsoHyperlink><o:p></o:p></span></p>
+
+<p class=MsoNormal>[10] <a href="http://www.dota2.com/items/">http://www.dota2.com/items/</a></p>
+
+<p class=MsoNormal>[11] <a
+href="https://dota2.gamepedia.com/Matchmaking/Seasonal_Rankings">https://dota2.gamepedia.com/Matchmaking/Seasonal_Rankings</a></p>
+
+<p class=MsoNormal>[12] <a href="https://dota2.gamepedia.com/Matchmaking_Rating">https://dota2.gamepedia.com/Matchmaking_Rating</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
