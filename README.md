@@ -9,16 +9,25 @@ In this work, I have prepared a report of paper RRCF by Amazon which has been us
 This folder contains the report of the paper and presentation slides.
 
 ### Data Mining in Dota 2
-In this work, I have introduced Dota 2 game, as a complex multi-objective, multi-agent problem and introduced different usage of regression, clustering, etc on high-level manner as a possible solution to issues like balancing the game, proper matchmaking, etc. This folder only contains a report file.
+In this work, I have introduced Dota 2 game, as a complex multi-objective, multi-agent problem and introduced different usage of regression, clustering, etc on high-level manner as a possible solution to issues like balancing the game, proper matchmaking, etc.
+This folder only contains a report file.
 
 ### Fast Decision Trees
-In this work, Fast Decision Trees has been introduced as the replace for the conventional decision.
+In this work, Fast Decision Trees has been introduced as the replace for the conventional decision tree to compensate slow interaction for large trees.
 
 ### HW01
-This work contains information about using different data mining techniques in search engines, different distances, dimensionality reduction, undersampling and data cleansing.
+This work contains information about using different topics such as:
+* Different data mining techniques that is being used in search engines
+* Different distances
+* Dimensionality reduction
+* Undersampling
+* Data cleansing.
 
 ### HW02
-In this work, different clustering methods, SMC and Jaccard distance, implementation of DBSCAN from scratch have been discussed and resolved.
+In this work, following topics has been covered:
+* Different clustering methods
+* SMC and Jaccard distance
+* Implementation of DBSCAN from scratch
 
 ### MiniHW01
 In this work, a majority of prominent metrics in data mining field have been compared to each other for different use cases. Also their benefits and downsides have been discussed too.
@@ -38,7 +47,7 @@ Videos are also available but I highly suggest you to use another resource.
 
 ## Citation
 - [ ] Add citation
-- [ ] create zonodo page
+- [ ] create zenodo page
 
 
 
